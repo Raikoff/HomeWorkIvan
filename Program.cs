@@ -1,2 +1,20 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Задача: Написать программу, которая из имеющегося массива целых чисел формирует массив из четных чисел.
+//  Первоначальный массив можно ввести с клавиатуры, 
+//  либо сгенерировать случайным образом. 
+//  При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
+
+int[] myArray = new int[10];
+Random rand = new Random();
+
+for(int i = 0; i < myArray.Length; i++)
+{
+    myArray[i] = rand.Next(1, 9);
+    
+    if (myArray[i] %2 == 0)
+    {
+        Console.Write(myArray[i] + " ");
+    }    
+}
+
+
+
